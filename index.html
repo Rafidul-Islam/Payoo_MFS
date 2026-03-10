@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Payoo MFS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="login-card">
+        <header>
+          <img src="./assets/Logo-full.png" alt="" />
+        </header>
+
+        <div class="form-card">
+          <form action="">
+            <label for="Mobile Number">Mobile Number</label>
+            <input
+              id="userNumber"
+              type="number"
+              placeholder="Enter your number"
+            />
+            <label for="4 Digit Pin">4 Digit Pin</label>
+            <input id="userPin" type="password" placeholder="Enter your pin" />
+
+            <!-- Always put type = button for buttons. Not type = submit -->
+            <button type="button" id="btn-login">Log In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/login.js"></script>
+  </body>
+</html>
