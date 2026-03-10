@@ -4,28 +4,247 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home</title>
-    <link rel="stylesheet" href="../index.css" />
     <link rel="stylesheet" href="../css/home.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
     <div class="home-page">
-      <div class="container-card">
-        <header class="flex">
-          <nav>
-            <div class="nav-left">
+      <div class="home-card">
+        <header class="">
+          <nav class="flex items-center justify-between">
+            <div class="nav-left flex justify-center items-center gap-2">
               <img class="w-12" src="../assets/logo.png" alt="" />
-              <div>
-                <h1 class="balance"></h1>
+              <div class="">
+                <h1 class="balance">$10000</h1>
                 <p class="sub-heading">Available Balance</p>
               </div>
             </div>
             <div class="nav-right">
-              <button type="button">Log Out</button>
+              <button type="button" class="text-sm border">Log Out</button>
             </div>
           </nav>
         </header>
+
+        <main>
+          <div class="banner !p-2 mx-4 my-6">
+            <h1 class="home-title font-bold text-2xl">
+              Welcome to Pay<span class="text-[#7460FF] font-bold">oo</span>
+            </h1>
+            <p class="home-description text-sm text-gray-500">
+              Enjoy easy and convenient financial services with us. Cashout
+              charge is low and
+            </p>
+          </div>
+
+          <div class="tabs">
+            <div class="tab">
+              <img src="../assets/opt-1.png" alt="" />
+              <h2>Add Money</h2>
+            </div>
+            <div class="tab">
+              <img src="../assets/opt-2.png" alt="" />
+              <h2>Cashout</h2>
+            </div>
+            <div class="tab">
+              <img src="../assets/opt-3.png" alt="" />
+              <h2>Transfer Money</h2>
+            </div>
+            <div class="tab">
+              <img src="../assets/opt-4.png" alt="" />
+              <h2>Get Bonus</h2>
+            </div>
+            <div class="tab">
+              <img src="../assets/opt-5.png" alt="" />
+              <h2>Pay Bill</h2>
+            </div>
+            <div class="tab">
+              <img src="../assets/opt-6.png" alt="" />
+              <h2>Transactions</h2>
+            </div>
+          </div>
+
+          <div class="latest-payments">
+            <h1 class="py-4 px-2 font-bold text-xl">Latest Payments</h1>
+
+            <div class="space-y-1">
+              <div
+                class="history-card bg-white py-4 px-2 rounded-xl flex items-center justify-start gap-2"
+              >
+                <div class="img-div p-2 bg-[#080808] rounded-[50%]">
+                  <img src="../assets//opt-1.png" alt="" />
+                </div>
+                <div class="history-card-title">
+                  <h2 class="history-title">Electricity Bill</h2>
+                  <p class="time text-xs">Today 1:44 PM</p>
+                </div>
+              </div>
+
+              <div
+                class="history-card bg-white py-4 px-2 rounded-xl flex items-center justify-start gap-2"
+              >
+                <div class="img-div p-2 bg-[#080808] rounded-[50%]">
+                  <img src="../assets//opt-1.png" alt="" />
+                </div>
+                <div class="history-card-title">
+                  <h2 class="history-title">Electricity Bill</h2>
+                  <p class="time text-xs">Today 1:44 PM</p>
+                </div>
+              </div>
+              <div
+                class="history-card bg-white py-4 px-2 rounded-xl flex items-center justify-start gap-2"
+              >
+                <div class="img-div p-2 bg-[#080808] rounded-[50%]">
+                  <img src="../assets//opt-1.png" alt="" />
+                </div>
+                <div class="history-card-title">
+                  <h2 class="history-title">Electricity Bill</h2>
+                  <p class="time text-xs">Today 1:44 PM</p>
+                </div>
+              </div>
+              <div
+                class="history-card bg-white py-4 px-2 rounded-xl flex items-center justify-start gap-2"
+              >
+                <div class="img-div p-2 bg-[#080808] rounded-[50%]">
+                  <img src="../assets//opt-1.png" alt="" />
+                </div>
+                <div class="history-card-title">
+                  <h2 class="history-title">Electricity Bill</h2>
+                  <p class="time text-xs">Today 1:44 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="add-money hidden">
+            <h1 class="py-4 px-2 font-bold text-xl">Add Money</h1>
+
+            <div class="form-card">
+              <form action="">
+                <label for="bank">Select a Bank</label>
+                <select name="bank" id="bank" aria-placeholder="Select bank">
+                  <option value="brac">Brac</option>
+                  <option value="ibbl">Ibbl</option>
+                  <option value="city">City</option>
+                </select>
+
+                <label>Bank Account Number</label>
+                <input
+                  type="number"
+                  placeholder="Enter 11 Digit account Number"
+                />
+
+                <label>Amount to Add</label>
+                <input
+                  type="number"
+                  placeholder="Enter 11 Digit account Number"
+                />
+
+                <label>Pin Number</label>
+                <input type="password" placeholder="Enter 4 Digit Pin Number" />
+              </form>
+            </div>
+          </div>
+
+          <div class="cash-out hidden">
+            <h1 class="py-4 px-2 font-bold text-xl">Cash Out</h1>
+
+            <div class="form-card">
+              <form action="">
+                <label>Agent Number Number</label>
+                <input
+                  type="number"
+                  placeholder="Enter 11 Digit account Number"
+                />
+
+                <label>Amount</label>
+                <input type="number" placeholder="Enter Amount" />
+
+                <label>Pin Number</label>
+                <input type="password" placeholder="Enter 4 Digit Pin Number" />
+              </form>
+            </div>
+          </div>
+
+          <div class="transfer-money hidden">
+            <h1 class="py-4 px-2 font-bold text-xl">Transfer Money</h1>
+
+            <div class="form-card">
+              <form action="">
+                <label>Agent Number Number</label>
+                <input
+                  type="number"
+                  placeholder="Enter 11 Digit account Number"
+                />
+
+                <label>Amount</label>
+                <input type="number" placeholder="Enter Amount" />
+
+                <label>Pin Number</label>
+                <input type="password" placeholder="Enter 4 Digit Pin Number" />
+              </form>
+            </div>
+          </div>
+
+          <div class="get-bonus hidden">
+            <h1 class="py-4 px-2 font-bold text-xl">Transfer Money</h1>
+
+            <div class="form-card">
+              <form action="">
+                <label>Enter Bonus Coupon</label>
+                <input type="number" placeholder="Enter yout Coupon" />
+
+                <button class="btn-get-bonus">Get Bonus</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="pay-bill hidden">
+            <h1 class="py-4 px-2 font-bold text-xl">Pay Bill</h1>
+
+            <div class="form-card">
+              <form action="">
+                <label for="bank">Select to Pay</label>
+                <select name="bank" id="bank" aria-placeholder="Select bank">
+                  <option value="brac">Brac</option>
+                  <option value="ibbl">Ibbl</option>
+                  <option value="city">City</option>
+                </select>
+
+                <label>Biller Account Number</label>
+                <input
+                  type="number"
+                  placeholder="Enter 11 Digit account Number"
+                />
+
+                <label>Amount to Pay</label>
+                <input
+                  type="number"
+                  placeholder="Enter 11 Digit account Number"
+                />
+
+                <label>Pin Number</label>
+                <input type="password" placeholder="Enter 4 Digit Pin Number" />
+              </form>
+            </div>
+          </div>
+
+          <div class="transaction-history hidden">
+            <h1 class="py-4 px-2 font-bold text-xl">Transaction History</h1>
+
+            <div
+              class="history-card bg-white py-4 px-2 rounded-xl flex items-center justify-start gap-2"
+            >
+              <div class="img-div p-2 bg-[#080808] rounded-[50%]">
+                <img src="../assets//opt-1.png" alt="" />
+              </div>
+              <div class="history-card-title">
+                <h2 class="history-title">Electricity Bill</h2>
+                <p class="time text-xs">Today 1:44 PM</p>
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </body>
 </html>

@@ -1,10 +1,94 @@
-.container-card {
-  background-color: #ebebeb;
+.home-page {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+}
+
+.home-card {
+  background-color: #ebebeb;
   min-height: 100vh;
-  min-width: 400px;
-  padding: 3rem;
+  max-width: 425px;
+}
+
+nav {
+  box-shadow: 0 2px 15px rgb(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.nav-right button {
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  padding: 0 1rem;
+  /* border: 1px solid; */
+}
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: small;
+  border-radius: 12px;
+  padding: 2rem 0;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.2);
+}
+
+.add-money,
+.cash-out,
+.transfer-money,
+.get-bonus,
+.pay-bill,
+.transaction-history,
+.latest-payments {
+  padding: 1rem;
+}
+
+.form-card {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1rem;
+}
+.form-card form label {
+  display: block;
+  color: gray;
+  font-size: small;
+  text-align: left !important;
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.form-card form input {
+  width: 100%;
+  border-radius: 32px;
+  padding: 12px;
+  margin-bottom: 1rem;
+  background-color: #f4f5f7;
+}
+
+.form-card form select {
+  width: 100%;
+  border-radius: 32px;
+  padding: 12px;
+  margin-bottom: 1rem;
+  background-color: #f4f5f7;
+}
+
+.btn-get-bonus {
+  background-color: #3b25c1;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  padding: 8px;
+  border-radius: 32px;
 }
